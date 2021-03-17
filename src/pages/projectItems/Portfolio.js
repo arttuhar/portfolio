@@ -19,7 +19,10 @@ const Portfolio = () => {
 					React, CSS, GSAP, Heroku
 				</p>
 			</div>
-			<Buttons demoLink="#" codeLink="#" />
+			<Buttons
+				demoLink="http://arttuhartikainen.herokuapp.com"
+				codeLink="https://github.com/arttuhar/portfolio"
+			/>
 		</div>
 	);
 };

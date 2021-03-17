@@ -63,6 +63,11 @@
 	margin-top: 40px;
 }
 
+.article a {
+	text-decoration: underline;
+	color: #222;
+}
+
 .socialLinks {
 	margin-top: 40px;
 }
