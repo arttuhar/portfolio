@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;600&display=swap");
+
+* {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo h1 {
+	text-decoration: none;
+	color: #222;
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: default;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+	margin: 0 20px;
+	text-decoration: none;
+	color: #222;
+	font-size: 16px;
+	font-weight: 300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.page {
+	position: absolute;
+}
+
+.pageContent {
+	max-width: 600px;
+	padding: 40px;
+}
+
+.article {
+	margin-top: 40px;
+}
+
+.socialLinks {
+	margin-top: 40px;
+}
+
+.socialLinks a,
+.projectButtons a {
+	font-size: 32px;
+	color: #222;
+	text-decoration: none;
+	margin-right: 40px;
+}
+
+.faIcon {
+	transition: all 0.1s ease-in-out;
+}
+
+.faIcon:hover {
+	transform: scale(1.2);
+}
+
+.cardGrid {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+
+.card {
+	min-height: 100%;
+	background: white;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: #222;
+	position: relative;
+	top: 0;
+	transition: all 0.1s ease-in-out;
+	width: 240px;
+}
+
+.card:hover {
+	transform: scale(1.1);
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card article {
+	padding: 20px;
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.card .thumb {
+	padding-bottom: 60%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card p {
+	flex: 1;
+	line-height: 1.4;
+}
+
+.projectButtons {
+	margin-top: 40px;
+}
+
+.page-enter {
+	opacity: 0;
+}
+
+.page-enter-active {
+	opacity: 1;
+	transition: opacity 400ms;
+	transition-delay: 600ms;
+}
+
+.page-exit {
+	opacity: 1;
+}
+
+.page-exit-active {
+	opacity: 0;
+	transition: opacity 400ms;
 }
