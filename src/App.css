@@ -155,3 +155,12 @@
 	opacity: 0;
 	transition: opacity 400ms;
 }
+
+@media only screen and (max-width: 768px) {
+	.cardGrid {
+		grid-template-columns: 1fr;
+	}
+	.card {
+		width: 320px;
+	}
+}
